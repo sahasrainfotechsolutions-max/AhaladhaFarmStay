@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your luxury stay at Ahaladha Resorts. Choose from Deluxe Rooms, Premium Suites, and Private Villas. Best rates guaranteed.">
+  <title>Book Your Stay — Ahaladha Farm Stay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ahaladha <span>Farm Stay</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-book-btn">Book Now</a>
+      </div>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <img src="images/room-deluxe.png" alt="Luxury Room">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <h1>Reserve Your Stay</h1>
+      <p class="breadcrumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Booking</p>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="section booking-section">
+    <div class="container text-center">
+      <span class="section-label" style="color:var(--clr-gold-light);">Reservation</span>
+      <h2 class="section-title" style="color:var(--clr-white);">Book Your Luxury Experience</h2>
+      <div class="divider"><span></span><i class="fas fa-diamond"></i><span></span></div>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.7);">Fill in your details below and we'll confirm your reservation within 24 hours. Best rates guaranteed for direct bookings.</p>
+
+      <div class="booking-form-container reveal">
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin"><i class="fas fa-calendar-alt"></i> Check-in Date</label>
+              <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout"><i class="fas fa-calendar-alt"></i> Check-out Date</label>
+              <input type="date" id="checkout" name="checkout" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="roomtype"><i class="fas fa-bed"></i> Room Type</label>
+              <select id="roomtype" name="roomtype" required>
+                <option value="" disabled selected>Select a room type</option>
+                <option value="deluxe">Deluxe Room — ₹4,999/night</option>
+                <option value="suite">Premium Suite — ₹8,499/night</option>
+                <option value="villa">Private Villa — ₹14,999/night</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests"><i class="fas fa-users"></i> Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="requests"><i class="fas fa-comment-alt"></i> Special Requests (Optional)</label>
+              <textarea id="requests" name="requests" rows="3" placeholder="Honeymoon setup, birthday cake, airport pickup, etc."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary booking-submit"><i class="fas fa-paper-plane"></i> Submit Reservation</button>
+        </form>
+
+        <!-- Confirmation message -->
+        <div class="booking-confirmation" id="bookingConfirmation">
+          <i class="fas fa-check-circle"></i>
+          <h3>Reservation Submitted!</h3>
+          <p style="color:rgba(255,255,255,.7); margin-bottom:1.5rem;">Thank you for choosing Ahaladha Resorts. Our team will contact you within 24 hours to confirm your booking and share payment details.</p>
+          <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO CARDS -->
+  <section class="section" style="background:var(--clr-white);">
+    <div class="container">
+      <div class="highlights-grid stagger-children">
+        <div class="highlight-card reveal">
+          <div class="highlight-icon"><i class="fas fa-tag"></i></div>
+          <h3>Best Price Guarantee</h3>
+          <p>Book directly with us for the lowest rates — guaranteed. No hidden fees, no surprises.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon"><i class="fas fa-undo"></i></div>
+          <h3>Free Cancellation</h3>
+          <p>Plans changed? Cancel up to 48 hours before check-in for a full refund.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Our concierge team is available around the clock for any questions or special requests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Ahaladha <span>Resorts</span></a>
+          <p>A luxury tropical resort offering world-class accommodation, dining, spa, and adventure experiences.</p>
+          <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="rooms.html">Rooms</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="booking.html">Book Now</a></div>
+        <div class="footer-col"><h4>Experiences</h4><a href="services.html">Spa</a><a href="services.html">Dining</a><a href="services.html">Adventure</a><a href="services.html">Events</a></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>123 Beachside Road, Goa 403001</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 98765 43210</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@ahaladharesorts.com</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Ahaladha Resorts. All Rights Reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    </div>
+  </footer>
+
+  <div class="floating-btns"><a href="https://wa.me/919876543210" class="float-btn float-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a><a href="tel:+919876543210" class="float-btn float-call"><i class="fas fa-phone-alt"></i></a></div>
+  <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
